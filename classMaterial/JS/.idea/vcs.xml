@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cityview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/class14-react-intro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/class21-react-form" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/class22-react-router" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react-cityview-base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/redux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/use-effect" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/use-state" vcs="Git" />
+  </component>
+</project>

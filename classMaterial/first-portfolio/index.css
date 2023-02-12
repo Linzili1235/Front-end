@@ -1,0 +1,97 @@
+.navbar-collapse {
+    position: fixed;
+    left: 40px;
+    top: 50px;
+    width: 160px;
+    height: 200px;
+    border: 2px double burlywood;
+}
+
+.navbar-nav {
+    padding: 15px;
+
+}
+.nav-item {
+    font-family: Futura;
+    margin: 10px;
+    font-size: 22px;
+    color: darkslategrey;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.nav-item:hover {
+    box-shadow: inset 100px 0 0 0 olivedrab;
+    color: white;
+}
+
+
+
+/*mainpage*/
+.main {
+    position: absolute;
+    left: 250px;
+    top: 50px;
+    border-left: 2px solid burlywood;
+
+}
+
+#myname {
+    font-family: Futura;
+    margin: 10px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+
+
+.container {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/*#myface {*/
+/*    ;*/
+
+
+/*}*/
+.image {
+    flex-basis: 30%;
+}
+
+
+.text {
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.container-item {
+    margin: 30px;
+    display: flex;
+    align-content: baseline;
+    justify-content: end;
+}
+
+
+.sub-title {
+   font-size: 28px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.skl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.footer {
+    background-color: beige;
+  margin-top: 3600px;
+}

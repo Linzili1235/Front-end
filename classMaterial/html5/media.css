@@ -1,0 +1,39 @@
+.nav {
+    border: 1px solid red;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuItem {
+    border: 1px solid red;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+.mobileItem {
+    border: 1px solid blue;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+@media only screen and (min-width: 650px) {
+    .mobileItem {
+        display: none;
+
+    }
+
+    .nav {
+        background-color: #db582f;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .menuItem {
+        display: none;
+
+    }
+}

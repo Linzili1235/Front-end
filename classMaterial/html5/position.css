@@ -1,0 +1,30 @@
+.d1 {
+    border: darkolivegreen 2px solid;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 90px;
+    top: 100px;
+}
+
+.d2 {
+    border: darkmagenta 2px solid;
+    width: 170px;
+    height: 150px;
+    position: absolute;
+    left: 80px;
+    top: 70px;
+}
+
+.d3 {
+    border: red 2px solid;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.body {
+
+}

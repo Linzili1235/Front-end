@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script>
+
+        function jumpto(anchor) {
+            window.location.href = anchor;
+        }
+    </script>
+</head>
+
+<body background-color="mintcream">
+
+<!--menu bar-->
+<nav>
+<div class="navbar-collapse">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+           onclick="jumpto('#aboutme');">About me</a>
+    </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+               onclick="jumpto('#feature');">Featured</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+               onclick="jumpto('#resume');">Resume</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+               onclick="jumpto('#contact');">Contact</a>
+        </li>
+
+    </ul>
+</div>
+<div>
+</div>
+</nav>
+<!--main page-->
+<div class="main">
+    <p id="myname">Jingyi Qi / Nicole</p>
+    <div class="container" id="aboutme">
+        <div class="image">
+            <img src="myface.JPG" alt="flower ocean" width="300px" height="400px">
+        </div>
+    <div class="text">
+        <strong>About</strong>
+        <hr>
+        <p>
+            I am a software engineer experienced in full stack web development.
+            I am also experienced in Big Data and Cloud Computing, Data Analytics and Visualization.
+            More than anything else, I love challenging myself.
+            I take pride in going a bit further everyday towards achieving my vision.
+            Time after time, I have achieved personal goals that might otherwise seem impossible with creative planning and relentless execution.
+        </p>
+        <strong>Background</strong>
+        <hr>
+        <p>
+            I majored in Data Science and Analytics at Georgetown University. During this period,
+            I have worked in effective teams to relentlessly tackle data science problems, increase business value, and improve customer experience.
+            In the meantime, I grew strong interest in web development.
+            I continue to rapidly grow with a humble, confident, and open-minded attitude.
+        </p>
+
+    </div>
+    </div>
+    <!--Featured Experience-->
+    <strong class="sub-title">Featured Experience</strong><hr>
+
+    <div class="container" id="feature">
+        <figure>
+            <img src="proj1.png" alt="project1" width="300px" height="300px">
+            <figcaption>The rules that can illustrate the relationships between the news of the big companies
+                and the stock prices changes of the small companies in the same industry is hard to find since
+                only limited data is deployed here. However, there are some interesting findings.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="proj2.png" alt="project2" width="300px" height="300px">
+            <figcaption>How does the annual total trade value between the US and different countries change over 2016-2020, for both import and export?
+                What is the trend in trade value and quantity for different commodity categories between the US and the world,
+                for both imports and exports?To address these problems, we build five different types of data visualizations,
+                which include a choropleth map, a treemap, a race bar chart, a slop chart, as well as a linked line and stacked bar chart
+                to better dissect data and figure out the messages hidden behind. .</figcaption>
+        </figure>
+
+        <figure>
+            <img src="proj3.png" alt="project3" width="300px" height="300px">
+            <figcaption>Given the popularity of cryptocurrency, we would like to take a glance at people’s opinions about
+                cryptocurrency with the craze of cryptos emerging one after another. In this project, we explore the data
+                about subreddits and comments that belong to the cryptocurrency community in the past year.
+                How much has the cryptocurrency community on Reddit grown over the period of time?
+                Which cryptocurrency receives the most attention? </figcaption>
+        </figure>
+
+    </div>
+<!--Resume-->
+    <strong class="sub-title">Resume</strong><hr>
+
+
+    <div class="container" id="resume">
+
+
+
+    <div>
+        <a class="btn btn-light" href="CV_Jingyi_Qi.pdf" download target="_blank"
+           style="text-decoration: none; color: rgb(0,0,100);">
+            Download
+        </a>
+        <hr>
+    </div>
+    </div>
+    <div>
+        <iframe class="embed-responsive-item" style="width: 100%; height: 1000px;" src="CV_Jingyi_Qi.pdf"></iframe>
+    </div>
+
+
+    <!--Contact-->
+    <strong class="sub-title">Contact</strong>
+    <hr>
+    <div class="container" id="contact">
+
+        <div>
+            <iframe  style="width: 100%; height:1000px"
+                    src="https://forms.gle/ej1J9ap9jKWJyeMF6"></iframe>
+        </div>
+    </div>
+
+</div>
+
+<!--footer-->
+<footer class="footer">
+    <div class="skl">
+        <div>
+            <a href="https://www.linkedin.com/in/jingyi-qi-59632a21b/" target="_blank">
+                <img src="linkedin.png" width="25" height="25" alt="LinkedIn"></a>
+        </div>
+        <div>
+            <a href="https://github.com/Linzili1235" target="_blank"><img src="github.png" width="25" height="25" alt="Github"></a>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        All rights reserved.
+    </div>
+
+</footer>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,40 @@
+/*position: relative */
+/*absolute */
+/*fixed*/
+/*sticky*/
+/*static*/
+
+#d1 {
+    border: 2px solid red ;
+    position: relative;
+    left: 60px;
+    top: 100px;
+}
+
+#abParent1 {
+    background-color: rgba(0,255,0,0.2);
+    width: 230px;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+
+}
+
+#abParent2 {
+    background-color: rgba(255,0,0,0.2);
+    width: 230px;
+    height: 150px;
+    position: static;
+}
+
+#d2 {
+    border: 2px solid blue;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+

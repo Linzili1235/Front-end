@@ -1,0 +1,827 @@
+@font-face {
+  font-family: "Promo";
+  src: url("font/Promo-Normal.ttf");
+}
+@font-face {
+  font-family: Friendly;
+  src: url("font/Friendly-ALZrM.ttf");
+}
+@font-face {
+  font-family: Linearicons-Free;
+  src: url("Linearicons-Free-v1.0.0/Web Font/fonts/Linearicons-Free.ttf");
+}
+body {
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  background: #184157;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  padding: 0 15px 0;
+  max-width: 1170px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 1170px;
+}
+@media screen and (max-width: 800px) {
+  section {
+    min-width: 300px;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: center;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  font-weight: 600;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  line-height: 1.42857;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.with-background {
+  background-image: url("https://weatherstack.com/site_images/mountains.svg"), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+  background-size: cover;
+  background-position: top;
+}
+.with-background .header {
+  background: transparent;
+}
+.with-background .header .container {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.with-background .header .container_logo {
+  display: inline-block;
+  position: relative;
+}
+.with-background .header .container_logo a {
+  margin-top: 14px;
+  float: left;
+  margin-left: -15px;
+}
+.with-background .header .container_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  .with-background .header .container_nav {
+    display: none;
+  }
+}
+.with-background .header .container_nav_navItem {
+  margin: 16px 15px 19px;
+  font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+  font-weight: 500;
+}
+.with-background .header .container_nav a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.with-background .header .container_nav .logIn {
+  padding: 10px 10px 10px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-right: -10px;
+}
+.with-background .header .container_nav .signUp {
+  background: #f47b21;
+  padding: 10px 10px 10px;
+  margin-top: -20px;
+  border-radius: 3px;
+}
+.with-background .header .container .mobile_nav {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .with-background .header .container .mobile_nav {
+    display: inline-block;
+  }
+  .with-background .header .container .mobile_nav span:before {
+    visibility: visible;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    background-size: 100% 100% !important;
+    margin-bottom: 5px;
+    font-family: Linearicons-Free;
+    font-size: 30px;
+    margin-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    content: "\e871";
+  }
+}
+.with-background .header .container .mobile_nav ul {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .with-background .header .container .mobile_nav ul {
+    background: #fff;
+    color: #333;
+    margin: 0;
+    float: none;
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    text-align: left;
+  }
+}
+
+.weather {
+  background-image: url("https://weatherstack.com/site_images/mountains.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0 160px;
+}
+@media screen and (max-width: 800px) {
+  .weather {
+    height: auto;
+  }
+}
+.weather .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .weather .container {
+    display: block;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.weather .container .left {
+  display: inline-block;
+  max-width: 550px;
+}
+.weather .container .left h2 {
+  font-weight: 570;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  font-size: 32px;
+  margin-top: 0;
+  max-width: 400px;
+}
+@media screen and (max-width: 800px) {
+  .weather .container .left h2 {
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+.weather .container .left h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 17px;
+  line-height: 25px;
+  max-width: 450px;
+}
+@media screen and (max-width: 800px) {
+  .weather .container .left h4 {
+    font-size: 18px;
+    line-height: normal;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.weather .container .left .number_customers {
+  font-size: 17px;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  font-weight: 500;
+  border: 0 solid rgb(255, 255, 255);
+  border-radius: 17px;
+  padding: 14px 10px 13px 16px;
+  line-height: 50px;
+  width: 388px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.weather .container .left .suf {
+  background: #f47b21;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px 30px 20px 30px;
+  color: white;
+}
+.weather .container .left .after_button {
+  font-family: Friendly, sans-serif;
+  font-size: 65px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.weather .container .right {
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  border: 4px solid #608094;
+  background: #16294c;
+}
+@media screen and (max-width: 800px) {
+  .weather .container .right {
+    margin-top: 40px;
+    width: auto;
+  }
+}
+.weather .container .right .location {
+  display: block;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.weather .container .right .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.weather .container .right .main .main_weather {
+  display: flex;
+  flex-direction: column;
+  margin-top: -50px;
+}
+.weather .container .right .main .main_weather span {
+  text-align: center;
+  margin-top: -20px;
+}
+.weather .container .right .main .temperature {
+  font-size: 32px;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.weather .container .right .main .WPP {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.weather .container .right .week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.weather .container .right .week .day {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.customersA {
+  padding: 40px 0 12px;
+  background: #eff2f5;
+  text-align: center;
+}
+.customersA .container {
+  padding: 0;
+}
+@media screen and (max-width: 800px) {
+  .customersA .container {
+    white-space: nowrap;
+    overflow: auto;
+    padding: 0 20px 40px;
+  }
+}
+.customersA .container ul {
+  padding: 0;
+  list-style: none;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.customersA .container ul li {
+  color: black;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  display: inline-block;
+  width: 187px;
+  height: 70px;
+  font-size: 15px;
+  font-weight: 300;
+  top: -19px;
+}
+@media screen and (max-width: 800px) {
+  .customersA .container ul .happy {
+    display: none;
+  }
+}
+
+.advantages {
+  background: white;
+  padding: 40px 0;
+  text-align: center;
+  display: block !important;
+  color: black;
+}
+.advantages .boxes {
+  background: #eff2f5;
+  border-radius: 5px;
+  padding: 18px 0 19px 0;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 800px) {
+  .advantages .boxes {
+    display: block;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.advantages .boxes .box {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+  margin: 0 12px;
+  border-radius: 5px;
+  vertical-align: text-top;
+  background: #ebeff4;
+  padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .advantages .boxes .box {
+    width: 85%;
+  }
+}
+
+.features {
+  padding: 25px 0 65px 0;
+  background: white;
+  color: black;
+}
+.features .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .features .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.features .container_details {
+  width: 440px;
+}
+.features .container_details h4 {
+  font-size: 25px;
+  line-height: normal;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.features .container_details p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.features .container_details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.features .container_details ul li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .features .container .map img {
+    width: 100%;
+  }
+}
+
+.example {
+  background: #184157 url("https://weatherstack.com/site_images/bg_waves_4.svg") no-repeat bottom;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+.example .container h4:before {
+  content: "Example";
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background: #416376;
+  width: 100px;
+  border-radius: 99px;
+  margin: -5px auto 30px;
+  text-align: center;
+  padding: 10px 0 11px 0;
+}
+.example .container h4 {
+  font-size: 25px;
+  line-height: normal;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.example .container h5 {
+  font-size: 20px;
+  line-height: normal;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+.example .container .buttons {
+  padding: 0;
+  margin: 40px 0 0;
+  list-style: none;
+}
+@media screen and (max-width: 800px) {
+  .example .container .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.example .container .buttons li {
+  display: inline-block;
+  margin-left: -13px;
+  margin-right: -2px;
+}
+.example .container .buttons li a {
+  background-color: white;
+  width: 225px;
+  display: inline-block;
+  padding: 16px 10px 18px 10px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .example .container .buttons li a {
+    border-radius: 10px;
+  }
+}
+.example .container .buttons li:nth-child(1) a {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #f47b21;
+}
+.example .container .buttons li:nth-child(3) a {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.example .container .result {
+  background-color: #17242b;
+  width: 673px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  text-align: left;
+  height: 500px;
+}
+@media screen and (max-width: 800px) {
+  .example .container .result {
+    width: auto;
+    margin: auto;
+  }
+}
+.example .container .more_features {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .example .container .more_features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.example .container .more_features li {
+  display: inline;
+  width: 370px;
+  padding: 14px 20px 15px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+  line-height: normal;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+  .example .container .more_features li {
+    margin: auto;
+    width: 80%;
+  }
+}
+.example .container .more_features li span {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+}
+.example .container .more_features li p {
+  margin-top: 15px;
+}
+.example .container .list2 {
+  margin-top: 0;
+}
+.example .container .list2 li {
+  padding: 14px 20px 0 20px;
+}
+
+.customersB {
+  background-color: white;
+  color: black;
+  padding: 45px 0 50px 0;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .customersB .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+}
+.customersB .container h4 {
+  font-size: 25px;
+  line-height: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 300;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+}
+.customersB .container h5 {
+  font-size: 20px;
+  line-height: normal;
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto 0;
+  font-weight: 300;
+}
+.customersB .container ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 45px;
+}
+@media screen and (max-width: 800px) {
+  .customersB .container ul {
+    text-align: center;
+  }
+}
+.customersB .container ul li {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.customersB .container ul .daimler {
+  background: #263e6a url("https://weatherstack.com/site_images/client_white_daimler.svg") no-repeat center;
+  background-size: 155px;
+}
+.customersB .container ul .deloitte {
+  background: #eef2f5 url("https://weatherstack.com/site_images/client_deloitte.svg") no-repeat center;
+  background-size: 150px;
+}
+.customersB .container ul .ericsson {
+  background: #01275b url("https://weatherstack.com/site_images/client_white_ericsson_2.svg") no-repeat center;
+  width: 135px;
+  background-size: 65px;
+}
+.customersB .container ul .microsoft {
+  background: #eef2f5 url("https://weatherstack.com/site_images/client_microsoft.svg") no-repeat center;
+  background-size: 175px;
+}
+.customersB .container ul .schneider {
+  background: #009e4d url("https://weatherstack.com/site_images/client_white_schneider.svg") no-repeat center;
+  background-size: 150px;
+  width: 200px;
+  margin-right: 0;
+}
+.customersB .container ul .warnerbros {
+  background: #027ac2 url("https://weatherstack.com/site_images/client_white_warnerbros.svg") no-repeat center;
+  background-size: 65px;
+  width: 190px;
+}
+.customersB .container ul .wawa {
+  background: #ee2e25 url("https://weatherstack.com/site_images/client_white_wawa.svg") no-repeat center;
+  background-size: 110px;
+}
+.customersB .container ul .canda {
+  background: #eef2f5 url("https://weatherstack.com/site_images/client_canda.svg") no-repeat center;
+  background-size: 90px;
+  width: 135px;
+}
+.customersB .container ul .mckinsey {
+  background: #23477f url("https://weatherstack.com/site_images/client_mckinsey.svg") no-repeat center;
+  background-size: 250px;
+  background-position-x: 10px;
+  width: 260px;
+}
+.customersB .container ul .rimowa {
+  background: #eef2f5 url("https://weatherstack.com/site_images/client_rimowa.svg") no-repeat center;
+  background-size: 155px;
+  margin-right: 0;
+}
+
+.cta {
+  padding: 45px 30px 50px 30px;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  background-size: 20%;
+  background: #eef2f5 no-repeat;
+}
+@media screen and (max-width: 800px) {
+  .cta {
+    padding: 45px 0 50px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cta .container {
+    width: auto;
+  }
+}
+.cta .container p {
+  font-size: 17px;
+  margin-bottom: 0;
+  font-weight: 300;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .cta .container p {
+    width: auto;
+  }
+}
+.cta .container p span {
+  padding-right: 30px;
+  font-weight: 300;
+  position: relative;
+  top: 1px;
+}
+@media screen and (max-width: 800px) {
+  .cta .container p span {
+    display: none;
+  }
+}
+.cta .container p a {
+  background: #f47b21;
+  padding: 17px 15px;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .cta .container p a {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+footer {
+  background: #184157;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 14px;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 30px 0 20px;
+  }
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+}
+footer .container .right_side {
+  font-size: 12px;
+  position: relative;
+  top: 3px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+  footer .container .right_side {
+    order: 9;
+  }
+}
+footer .container .right_side .social-link {
+  display: flex;
+  flex-direction: row;
+}
+footer .container .right_side .social-link .social-logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .container .copy-section {
+  width: 27%;
+  margin-right: 40px;
+}
+footer .container .main_footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .container .main_footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 196px;
+}
+@media screen and (max-width: 800px) {
+  footer .container .main_footer ul {
+    width: 50%;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+}
+footer .container .main_footer ul .heading {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Promo", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer .container .main_footer ul li {
+  line-height: 30px;
+}
+footer .container .main_footer ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

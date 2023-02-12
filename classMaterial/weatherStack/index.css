@@ -1,0 +1,505 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background: #184157;
+    font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
+    margin: 0;
+    line-height: 1.4;
+}
+
+.section1 {
+    background-image: url("https://weatherstack.com/site_images/mountains.svg"),
+    linear-gradient(135deg, #1f4e69 0, #164058 100%);
+    background-size: cover;
+    /*background-position: center;*/
+    color: #fff;
+    padding: 140px 0 160px 0;
+}
+
+/*set different font-family*/
+.button, h4, h2, a {
+    font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@font-face {
+    font-family: Friendly;
+    src: url("Friendly-ALZrM.ttf");
+}
+
+
+/*section1*/
+
+.header {
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-radius: 0;
+    top: 0;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    height: 70px;
+}
+
+.header .logo {
+    float: left;
+    padding-left: 15px;
+}
+
+.header .logo a {
+    color: #333;
+    margin-top: 14px;
+    font-weight: 700;
+    float: left;
+    font-size: 24px;
+    line-height: normal;
+    margin-left: -15px;
+}
+
+.container .logo img {
+    display: inline-block;
+    margin-right: 10px;
+    top: 1px;
+    position: relative;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*justify-content: space-evenly*/
+}
+
+.container {
+    padding-right: 15px;
+    max-width: 1170px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav .navItem .status a {
+    padding: 0 10px 1px;
+    border-radius: 3px;
+    background: 0 0;
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+.nav .navItem a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 16px 15px 19px;
+
+}
+
+
+
+.nav {
+    text-align: -webkit-match-parent;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav .navItem .action a {
+    padding: 10px 10px 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .15);
+    margin-right: 0;
+}
+
+.nav .navItem .action.suf a {
+    background: #f47b21;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 10px 10px;
+    margin-right: 0;
+}
+
+#inline1 a::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #47c652;
+    position: relative;
+    top: 1px;
+    left: -6px;
+    margin-left: 4px;
+}
+
+
+/*second part of section 1*/
+section.hero {
+    background: url(https://weatherstack.com/site_images/mountains.svg),
+    linear-gradient(135deg, #1f4e69 0, #164058 100%);
+    background-size: cover;
+    /*background-position: center;*/
+    color: #fff;
+    padding: 140px 0 160px 0;
+}
+
+section.hero .container h2 {
+    font-weight: 570;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-top: 0;
+    max-width: 400px;
+}
+
+section.hero .container h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 17px;
+    line-height: 25px;
+    max-width: 450px;
+}
+
+
+
+section.hero .container .number_customers {
+    font-size: 17px;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    display: block;
+    border: 0 solid rgba(255, 255, 255, 1);
+    border-radius: 17px;
+    padding: 6px 10px 13px 16px;
+    line-height: 20px;
+    width: 388px;
+    background: rgba(255, 255, 255, .1);
+}
+
+section.hero .container .number_customers::before {
+    font-family: 'Linearicons-Free';
+    display: inline-block;
+    font-weight: 300;
+    speak: none;
+    font-size: 25px;
+    margin-top: 0;
+    content: "\e804";
+    position: relative;
+    left: 0;
+    top: 5px;
+    margin-right: 10px;
+
+}
+
+section.hero .container .suf {
+    background: #f47b21;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+}
+
+section.hero .container a {
+    margin: 30px ;
+}
+
+.button, img {
+    vertical-align: middle;
+}
+
+.button {
+    margin-bottom: 0;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    line-height: 1.42857;
+    user-select: none;
+}
+
+.button {
+    white-space: nowrap;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    margin-right: 5px;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 5%), 0 1px 3px rgb(0 0 0 / 5%);
+}
+
+section.hero .container span.after_button {
+    font-family: Friendly, sans-serif;
+    font-size: 65px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/*@media screen and (max-width: 800px)*/
+section.hero .container .inline {
+    display: block;
+    max-width: 550px;
+
+}
+
+/*weather animated*/
+section.hero .container .weather_animated {
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    border-radius: 10px;
+    right: 15px;
+    top: 14px;
+    border: 4px solid #608094;
+    background: #16394c;
+}
+
+section.hero .container .weather_animated .location {
+    display: block;
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+section.hero .container .weather_animated .main_left {
+    float: left;
+    width: 275px;
+    height: 137px;
+}
+
+section.hero .container .weather_animated .main_left i {
+    width: 140px;
+    height: 137px;
+    left: 55px;
+    /* top: 10px !important; */
+}
+section.hero .container .weather_animated i {
+    position: absolute;
+}
+
+ i {
+    float: left;
+}
+
+section.hero .container .weather_animated i.cloud_slight_rain {
+    background: url("https://weatherstack.com/site_images/weather_icon_cloud_slight_rain.svg") no-repeat;
+
+}
+
+section.hero .container .weather_animated .main_left span {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+section.hero .container .weather_animated .main_right {
+    float: right;
+    /* width: 215px; */
+    height: 137px;
+    padding-top: 26px;
+    position: absolute;
+    /*left: 67px;*/
+    right: 37px;
+    left: unset;
+}
+
+section.hero .container .weather_animated .main_right span {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+section.hero .container .weather_animated .main_right .temperature {
+    position: absolute;
+    left: -135px;
+    top: 33px;
+    font-size: 32px;
+
+}
+
+section.hero .container .weather_animated .week {
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+section.hero .container .weather_animated .week .day {
+    display: inline-block;
+    width: 95px;
+    height: 107px;
+    position: relative;
+}
+
+section.hero .container .weather_animated .week .day .dayName {
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+}
+
+section.hero .container .weather_animated .week .day i {
+    background: url("https://weatherstack.com/site_images/weather_icon_cloud_slight_rain.svg") no-repeat;
+    left: 16px;
+    background-size: 60px;
+    width: 140px;
+    height: 137px;
+}
+
+section.hero .container .weather_animated .week .day .temperature {
+    position: absolute;
+    bottom: 11px;
+    width: 100%;
+    left: 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*second section: customer part*/
+section.customers {
+    padding: 40px 0 12px;
+    background: #eff2f5;
+}
+
+section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container, section .container {
+    padding-right: 15px;
+    max-width: 1270px;
+    padding-left: 15px;
+    position: relative;
+}
+
+section.customers .container span {
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    color: #333333;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.customers {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+section.customers .container div {
+    /*width: 187px;*/
+    height: 60px;
+    position: relative;
+    margin: 10px
+}
+
+section.customers .deloitte {
+    width: 120px;
+    background: url("https://weatherstack.com/site_images/client_deloitte.svg") no-repeat center;
+}
+
+section.customers .microsoft {
+    width: 135px;
+    background: url("https://weatherstack.com/site_images/client_microsoft.svg") no-repeat center;
+}
+
+section.customers .warnerbros {
+    width: 55px;
+    background-size: 48px;
+
+    background: url("https://weatherstack.com/site_images/client_warnerbros.svg") no-repeat center;
+}
+section.customers .wawa {
+    width: 185px;
+    background: url("https://weatherstack.com/site_images/client_wawa.svg") no-repeat center;
+}
+section.customers .schneider {
+    width: 190px;
+    background: url("https://weatherstack.com/site_images/client_schneider.svg") no-repeat center;
+}
+section.customers .ericsson {
+    width: 230px;
+    background: url("https://weatherstack.com/site_images/client_ericsson.svg") no-repeat center;
+}
+
+/*third-seciton*/
+section.show {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.show {
+    display: block !important;
+}
+
+section.show .boxes {
+    background: #eff2f5;
+    border-radius: 5px;
+    padding: 18px 0 19px 0;
+}
+
+section.show .box {
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    margin: 0 12px;
+    border-radius: 5px;
+    vertical-align: text-top;
+}
+
+.box {
+    background-color: #ebeff4;
+    padding: 10px;
+}
+
+section.show .box h5 {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+
+
+
