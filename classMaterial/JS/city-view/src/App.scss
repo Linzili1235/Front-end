@@ -1,0 +1,27 @@
+
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  //h1 {
+  //  position: absolute;
+  //  bottom: 60%;
+  //  left: 42%;
+  //}
+  .searchBar {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+
+
+
+  }
+}
