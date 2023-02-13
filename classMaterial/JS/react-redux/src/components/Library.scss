@@ -1,0 +1,12 @@
+.libraryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}

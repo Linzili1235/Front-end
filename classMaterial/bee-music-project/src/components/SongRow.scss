@@ -1,0 +1,45 @@
+.songRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 3px 1px 3px;
+  //border: 1px red solid;
+
+
+
+  .songRow_Index {
+    //display: flex;
+    //flex-direction: row;
+    //display: inline;
+
+
+  }
+
+  .songRow_Image {
+    //display: inline;
+    margin: 0;
+
+  }
+  .songRow_Content {
+    //display: flex;
+    //flex-direction: row;
+    //display: inline;
+
+    .songRow_Content_Album {
+      //display: inline;
+    }
+
+
+  }
+  .songRow_Length {
+    text-align: center;
+  }
+
+
+
+}
+
+.songRow:hover {
+    background-color: grey;
+}

@@ -1,0 +1,19 @@
+.songRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 3px 1px 3px;
+}
+.songRow .songRow_Image {
+  margin: 0;
+}
+.songRow .songRow_Length {
+  text-align: center;
+}
+
+.songRow:hover {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=SongRow.css.map */

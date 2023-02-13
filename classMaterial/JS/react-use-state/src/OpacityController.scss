@@ -1,0 +1,15 @@
+.opacityContainer {
+  border: 2px green solid;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+
+  .square {
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    background-color: coral;
+  }
+}

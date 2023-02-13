@@ -1,0 +1,45 @@
+@use '../index' as cssIndex;
+
+.songList {
+  border: 1px gray solid;
+  padding: 5px;
+  width: 33%;
+  min-width: 360px;
+  max-width: 960px;
+
+  .list {
+    border: 1px green solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+
+    .listRow {
+      margin: 2px;
+      border: 1px red solid;
+
+    }
+
+  }
+}
+
+.title {
+  color: cssIndex.$clrHighlight ;
+  font-size: 16px;
+  font-family: Ember, Helvetica, Arial, "sans-serif";
+  font-weight: bold;
+  padding: 10px;
+}
+
+.icon {
+  display: inline-block;
+  padding: 2px;
+  width: 24px;
+  height: 24px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+}
