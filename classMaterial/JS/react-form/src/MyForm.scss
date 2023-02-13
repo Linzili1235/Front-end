@@ -1,0 +1,23 @@
+form {
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+
+}
+
+input[type='email']:valid {
+  border: 1px green solid;
+  background-color: green;
+}
+
+
+input[type='email']:invalid {
+  border: 1px red solid;
+  background-color: red;
+}

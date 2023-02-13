@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.childrenContainer {
+  display: flex;
+  gap: 5px;
+}
