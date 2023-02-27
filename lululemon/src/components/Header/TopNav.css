@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background: #fafafa;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: Calibre Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  text-align: center;
+  margin: 0px auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url("assets/font/calibre/CalibreRegular.otf");
+}
+* {
+  box-sizing: border-box;
+  font-size: 97.5%;
+}
+
+.topNavigation_container .topNavigation_bg {
+  padding: 0 25px;
+  height: 2.125rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 85.75rem;
+  padding: 0.5rem 1.5625rem;
+  width: 100%;
+}
+.topNavigation_container .topNavigation_bg .topNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  line-height: 1.4285714286;
+  height: 2.125rem;
+  align-items: center;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem a {
+  font-size: 0.675rem;
+  font-weight: 400;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem a .navName {
+  position: relative;
+  top: -0.2rem;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem a .navName::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #d31334;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem a .navName:hover {
+  cursor: pointer;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem a .navName:hover::after {
+  transform: scaleX(1);
+  transform-origin: top left;
+}
+.topNavigation_container .topNavigation_bg .topNav .navItem a .icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+}
+
+/*# sourceMappingURL=TopNav.css.map */

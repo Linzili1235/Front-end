@@ -1,0 +1,15 @@
+.sideBar {
+  text-transform: capitalize;
+}
+.sideBar .sideBarTitle {
+  display: flex;
+  align-items: flex-start;
+}
+.sideBar .sideBarTitle h1 {
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.675rem;
+  line-height: 1.0666666667;
+}
+
+/*# sourceMappingURL=SideBar.css.map */

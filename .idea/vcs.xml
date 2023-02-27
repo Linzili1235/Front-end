@@ -2,13 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/cityview" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/class14-react-intro" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/class21-react-form" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/class22-react-router" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/react-cityview-base" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/redux" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/use-effect" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/classMaterial/JS/use-state" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lulu-front" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/peidong-lulu/lulu-front" vcs="Git" />
   </component>
 </project>
